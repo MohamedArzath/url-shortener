@@ -10,6 +10,7 @@
   <img src="https://img.shields.io/badge/React-19-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React 19" />
   <img src="https://img.shields.io/badge/PostgreSQL-Database-336791?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/Alembic-Migrations-444444?style=flat-square" alt="Alembic Migrations" />
+  <img src="https://img.shields.io/badge/License-MIT-97CA00?style=flat-square" alt="MIT License" />
 </p>
 
 </div>
