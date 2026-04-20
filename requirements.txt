@@ -4,3 +4,4 @@ alembic==1.18.4
 psycopg2-binary==2.9.11
 python-dotenv==1.2.2
 uvicorn==0.44.0
+dotenv

@@ -81,7 +81,7 @@ cp react-ui/.env.example react-ui/.env
 
 | Variable | Required | Description | Example |
 | --- | --- | --- | --- |
-| `VITE_API_BASE_URL` | Yes | Base URL for the FastAPI server used by the React app | `http://127.0.0.1:8000` |
+| `VITE_API_BASE_URL` | Yes | Base URL for the FastAPI server used by the React app | `http://localhost:8088` |
 
 If you run FastAPI on a different port or host, update `VITE_API_BASE_URL` to match it.
 
@@ -150,13 +150,13 @@ alembic downgrade -1
 Run the API server from the project root:
 
 ```bash
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+uvicorn app.main:app --reload --host localhost --port 8088
 ```
 
 Backend endpoints will be available at:
 
-- API base URL: `http://127.0.0.1:8000`
-- Swagger docs: `http://127.0.0.1:8000/docs`
+- API base URL: `http://localhost:8088/`
+- Swagger docs: `http://localhost:8088/docs`
 
 ### 6. Set up the React frontend
 
@@ -178,7 +178,7 @@ Configure frontend environment variables:
 cp .env.example .env
 ```
 
-Update `.env` if your backend is not running on `http://127.0.0.1:8000`.
+Update `.env` if your backend is not running on `http://localhost:8088`.
 
 ### 7. Start React
 
@@ -196,7 +196,7 @@ Frontend development server:
 
 ```bash
 source .venv/bin/activate
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+uvicorn app.main:app --reload --host localhost --port 8088
 ```
 
 ### Frontend
